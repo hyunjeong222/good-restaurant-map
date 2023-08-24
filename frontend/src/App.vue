@@ -1,23 +1,33 @@
 <!-- 가장 초기 화면, main.js에 설정 -->
 <template>
   <div id="app">
-    <KakaoMap/>
+    <TopBar/>
+    <LoginForm/>
   </div>
 </template>
 
 <script>
-import KakaoMap from "@/components/KakaoMap"
+import TopBar from '@/components/TopBar'
+import LoginForm from '@/components/Login'
 
 export default {
   name: 'App',
   components: {
-    KakaoMap,
+    TopBar,
+    LoginForm,
   }
 }
 </script>
 
 <style lang="scss">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #app {
+  font-family: 'BMJUA';
   position: absolute;
   top: 0;
   right: 0;

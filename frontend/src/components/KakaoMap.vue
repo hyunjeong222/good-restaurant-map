@@ -4,7 +4,6 @@
 </template>
   
 <script>
- 
 export default {
     name: 'KakaoMap',
     data() {
@@ -55,7 +54,9 @@ export default {
   
 <style scoped>
 #map {
-    width: 100%;
-    height: 100%;
+    float: right;
+    width: 620px;
+    height: 620px;
+    margin: 30px;
 }
 </style>

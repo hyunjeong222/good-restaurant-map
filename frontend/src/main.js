@@ -1,5 +1,8 @@
+import '@babel/polyfill'
+import 'mutationobserver-shim'
 // App.vue 파일을 import 해온 뒤 렌더링 시키고
 import Vue from 'vue'
+import './plugins/bootstrap-vue'
 import App from './App.vue'
 
 Vue.config.productionTip = false
